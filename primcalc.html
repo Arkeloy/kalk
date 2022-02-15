@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+    <input id=nr1 type="text">
+    <button id=add onclick="addition()">+</button>
+    <button id=subtract onclick="subtraction()">-</button>
+    <button id=multiply onclick="multiplication()">*</button>
+    <button id=divide onclick="division()">/</button>
+    <input id=nr2 type="text">
+    <br><br>
+    <div id="res"></div>
+    
+</body>
+
+<script>
+
+    function addition() {
+        var number1 = parseFloat(document.getElementById("nr1").value);
+        var number2 = parseFloat(document.getElementById("nr2").value); 
+
+        var result = number1 + number2;
+        document.getElementById("res").innerHTML= number1 + "+" + number2 + "=" + result;
+    }
+
+    function subtraction() {
+        var number1 = parseFloat(document.getElementById("nr1").value);
+        var number2 = parseFloat(document.getElementById("nr2").value); 
+
+        var result = number1 - number2;
+        document.getElementById("res").innerHTML= number1 + "-" + number2 + "=" + result;
+    }
+
+    function multiplication() {
+        var number1 = parseFloat(document.getElementById("nr1").value);
+        var number2 = parseFloat(document.getElementById("nr2").value); 
+
+        var result = number1 * number2;
+        document.getElementById("res").innerHTML= number1 + "*" + number2 + "=" + result;
+    }
+
+    function division() {
+        var number1 = parseFloat(document.getElementById("nr1").value);
+        var number2 = parseFloat(document.getElementById("nr2").value); 
+
+        var result = number1 / number2;
+        document.getElementById("res").innerHTML= number1 + "/" + number2 + "=" + result;
+    }
+
+</script>
+</html>
